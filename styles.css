@@ -20,6 +20,7 @@ header h1 {
 .divider {
     border-bottom:1px solid #888989;
     margin: 2px 0;
+    clear: right;
 }
 .bold {
     font-weight: 800;
@@ -32,14 +33,25 @@ header h1 {
 }
 .lg, .md {
     background-color: black;
-    border: 0px;
+    border: 0;
+}
+.md {
+    height: 5px;
 }
 .sm-text {
     font-size:0.85rem;
 }
 .calories-info h1 {
    margin: -5px -2px; 
+   overflow: hidden;
 }
 .calories-info span {
     font-size: 1.2em;
+    margin-top: -7px;
+}
+.indent {
+    margin-left: 1em;
+}
+.daily-value p:not(.no-divider) {
+    border-bottom:1px solid #888989;
 }
